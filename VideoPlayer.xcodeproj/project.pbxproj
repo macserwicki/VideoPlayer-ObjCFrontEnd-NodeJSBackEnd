@@ -15,6 +15,8 @@
 		520817991CE51E0600F31BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520817971CE51E0600F31BF6 /* LaunchScreen.storyboard */; };
 		520817A21CE51E2900F31BF6 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 520817A11CE51E2900F31BF6 /* HTTPService.m */; };
 		520817AC1CE6749F00F31BF6 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 520817AB1CE6749F00F31BF6 /* VideoCell.m */; };
+		520817AF1CE6B7AE00F31BF6 /* MaterialDesignView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520817AE1CE6B7AE00F31BF6 /* MaterialDesignView.m */; };
+		520817B21CE6DD4200F31BF6 /* VideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 520817B11CE6DD4200F31BF6 /* VideoData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		520817A11CE51E2900F31BF6 /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPService.m; path = ../HTTPService.m; sourceTree = "<group>"; };
 		520817AA1CE6749F00F31BF6 /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
 		520817AB1CE6749F00F31BF6 /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		520817AD1CE6B7AE00F31BF6 /* MaterialDesignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialDesignView.h; sourceTree = "<group>"; };
+		520817AE1CE6B7AE00F31BF6 /* MaterialDesignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDesignView.m; sourceTree = "<group>"; };
+		520817B01CE6DD4200F31BF6 /* VideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoData.h; sourceTree = "<group>"; };
+		520817B11CE6DD4200F31BF6 /* VideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +73,6 @@
 				520817A41CE6435800F31BF6 /* Model */,
 				520817A51CE6436C00F31BF6 /* View */,
 				520817A61CE6437100F31BF6 /* Controller */,
-				520817A31CE51FB800F31BF6 /* Services */,
 				520817921CE51E0600F31BF6 /* Main.storyboard */,
 				520817971CE51E0600F31BF6 /* LaunchScreen.storyboard */,
 				520817891CE51E0600F31BF6 /* Supporting Files */,
@@ -99,6 +104,9 @@
 		520817A41CE6435800F31BF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				520817B01CE6DD4200F31BF6 /* VideoData.h */,
+				520817B11CE6DD4200F31BF6 /* VideoData.m */,
+				520817A31CE51FB800F31BF6 /* Services */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -108,6 +116,8 @@
 			children = (
 				520817AA1CE6749F00F31BF6 /* VideoCell.h */,
 				520817AB1CE6749F00F31BF6 /* VideoCell.m */,
+				520817AD1CE6B7AE00F31BF6 /* MaterialDesignView.h */,
+				520817AE1CE6B7AE00F31BF6 /* MaterialDesignView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -192,10 +202,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				520817911CE51E0600F31BF6 /* ViewController.m in Sources */,
+				520817B21CE6DD4200F31BF6 /* VideoData.m in Sources */,
 				520817AC1CE6749F00F31BF6 /* VideoCell.m in Sources */,
 				520817A21CE51E2900F31BF6 /* HTTPService.m in Sources */,
 				5208178E1CE51E0600F31BF6 /* AppDelegate.m in Sources */,
 				5208178B1CE51E0600F31BF6 /* main.m in Sources */,
+				520817AF1CE6B7AE00F31BF6 /* MaterialDesignView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

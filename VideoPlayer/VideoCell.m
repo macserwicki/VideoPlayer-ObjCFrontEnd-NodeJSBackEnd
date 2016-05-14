@@ -25,10 +25,10 @@
     // Initialization code
     
     self.layer.cornerRadius = 2.5;
-    self.layer.shadowColor = [[UIColor darkGrayColor] CGColor];
-    self.layer.shadowOffset = CGSizeMake(1, 1);
+    self.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.layer.shadowOffset = CGSizeMake(1.0, 2.0);
     self.layer.shadowRadius = 5.0;
-    
+    self.layer.shadowOpacity = 0.5;
     
     
 }
