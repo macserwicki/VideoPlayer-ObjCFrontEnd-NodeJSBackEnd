@@ -7,11 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "VideoViewController.h"
 #import "HTTPService.h"
 #import "VideoCell.h"
 #import "VideoData.h"
 
 @interface ViewController ()
+
+//Todo: Could add image caching;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) NSArray *videoList;
@@ -79,11 +82,25 @@
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    VideoData *video = [self.videoList objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"VideoViewController" sender:video];
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    VideoViewController *viewController = (VideoViewController*)segue.destinationViewController;
+    VideoData *videoData = (VideoData*)sender;
+    viewController.video = videoData;
+    
     
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     //cell will display
+    VideoData *video = [self.videoList objectAtIndex:indexPath.row];
+    VideoCell *videoCell = (VideoCell*)cell;
+    [videoCell updateUI: video];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

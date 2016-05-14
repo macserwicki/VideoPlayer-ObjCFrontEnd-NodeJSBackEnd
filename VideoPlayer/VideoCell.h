@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class VideoData;
+
 @interface VideoCell : UITableViewCell
 
-
+-(void)updateUI:(nonnull VideoData*)video;
 
 @end

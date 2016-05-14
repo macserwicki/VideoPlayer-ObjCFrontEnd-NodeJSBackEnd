@@ -17,6 +17,7 @@
 		520817AC1CE6749F00F31BF6 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 520817AB1CE6749F00F31BF6 /* VideoCell.m */; };
 		520817AF1CE6B7AE00F31BF6 /* MaterialDesignView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520817AE1CE6B7AE00F31BF6 /* MaterialDesignView.m */; };
 		520817B21CE6DD4200F31BF6 /* VideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 520817B11CE6DD4200F31BF6 /* VideoData.m */; };
+		520817B51CE7981F00F31BF6 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520817B41CE7981F00F31BF6 /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		520817AE1CE6B7AE00F31BF6 /* MaterialDesignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDesignView.m; sourceTree = "<group>"; };
 		520817B01CE6DD4200F31BF6 /* VideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoData.h; sourceTree = "<group>"; };
 		520817B11CE6DD4200F31BF6 /* VideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoData.m; sourceTree = "<group>"; };
+		520817B31CE7981F00F31BF6 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		520817B41CE7981F00F31BF6 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 			children = (
 				5208178F1CE51E0600F31BF6 /* ViewController.h */,
 				520817901CE51E0600F31BF6 /* ViewController.m */,
+				520817B31CE7981F00F31BF6 /* VideoViewController.h */,
+				520817B41CE7981F00F31BF6 /* VideoViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				520817A21CE51E2900F31BF6 /* HTTPService.m in Sources */,
 				5208178E1CE51E0600F31BF6 /* AppDelegate.m in Sources */,
 				5208178B1CE51E0600F31BF6 /* main.m in Sources */,
+				520817B51CE7981F00F31BF6 /* VideoViewController.m in Sources */,
 				520817AF1CE6B7AE00F31BF6 /* MaterialDesignView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

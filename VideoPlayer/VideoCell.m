@@ -7,7 +7,7 @@
 //
 
 #import "VideoCell.h"
-
+#import "VideoData.h";
 
 
 @interface VideoCell()
@@ -38,5 +38,15 @@
 
     // Configure the view for the selected state
 }
+
+-(void)updateUI:(nonnull VideoData*)video {
+    self.titleLabel.text = video.videoTitle;
+    self.descriptionLabel.text = video.videoDescription;
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:video.thumbnailURL]]];
+    self.thumbnailImageView.image = image;
+    
+}
+
+
 
 @end

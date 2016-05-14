@@ -113,11 +113,92 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="a0z-pZ-FDv" id="PSB-rH-eGz"/>
+                        <segue destination="BhJ-sc-1oj" kind="modal" identifier="VideoViewController" id="MYN-Hk-Scq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="440" y="315"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="9D6-2U-mZV">
+            <objects>
+                <viewController id="BhJ-sc-1oj" customClass="VideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="40D-zp-XVi"/>
+                        <viewControllerLayoutGuide type="bottom" id="UVX-Gg-GoO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HKR-Wp-dPb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8KE-Q2-QND">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="224"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="THe-qf-zOD"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stanford University Developing iOS 7 Apps: Lecture 12 - Documents and Core Data" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMZ-Rw-djF">
+                                <rect key="frame" x="20" y="236" width="560" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXo-jV-vpp">
+                                <rect key="frame" x="20" y="293" width="560" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="o43-nk-VrY"/>
+                                </constraints>
+                                <string key="text">This is a lecture of the course as it was published by Stanford University. It has Creative Commons rights. This is a lecture of the course as it was published by Stanford University. It has Creative Commons rights.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-R4-qze">
+                                <rect key="frame" x="282" y="388" width="37" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4AC-vb-j4A"/>
+                                    <constraint firstAttribute="width" constant="75" id="IaB-20-yaS"/>
+                                    <constraint firstAttribute="width" constant="37" id="KCi-qi-9gt"/>
+                                    <constraint firstAttribute="height" constant="30" id="WDd-mQ-3wm"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4AC-vb-j4A"/>
+                                        <exclude reference="IaB-20-yaS"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="BhJ-sc-1oj" eventType="touchUpInside" id="GGz-dh-gS5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HXo-jV-vpp" firstAttribute="top" secondItem="nMZ-Rw-djF" secondAttribute="bottom" constant="16" id="3C1-zw-nM9"/>
+                            <constraint firstItem="HXo-jV-vpp" firstAttribute="trailing" secondItem="HKR-Wp-dPb" secondAttribute="trailingMargin" id="3SE-yX-5nf"/>
+                            <constraint firstItem="mbe-R4-qze" firstAttribute="centerX" secondItem="HKR-Wp-dPb" secondAttribute="centerX" id="5b3-va-JLD"/>
+                            <constraint firstItem="mbe-R4-qze" firstAttribute="top" secondItem="HXo-jV-vpp" secondAttribute="bottom" constant="20" id="NCC-lu-yGF"/>
+                            <constraint firstItem="nMZ-Rw-djF" firstAttribute="leading" secondItem="HKR-Wp-dPb" secondAttribute="leadingMargin" id="PML-VE-h9l"/>
+                            <constraint firstItem="8KE-Q2-QND" firstAttribute="top" secondItem="HKR-Wp-dPb" secondAttribute="top" id="l0E-r3-32B"/>
+                            <constraint firstItem="8KE-Q2-QND" firstAttribute="leading" secondItem="HKR-Wp-dPb" secondAttribute="leading" id="mP4-uS-oAb"/>
+                            <constraint firstItem="nMZ-Rw-djF" firstAttribute="trailing" secondItem="HKR-Wp-dPb" secondAttribute="trailingMargin" id="r4i-NI-zY9"/>
+                            <constraint firstAttribute="trailing" secondItem="8KE-Q2-QND" secondAttribute="trailing" id="vNb-M2-bVj"/>
+                            <constraint firstItem="nMZ-Rw-djF" firstAttribute="top" secondItem="8KE-Q2-QND" secondAttribute="bottom" constant="12" id="yIs-Ll-GCy"/>
+                            <constraint firstItem="HXo-jV-vpp" firstAttribute="leading" secondItem="HKR-Wp-dPb" secondAttribute="leadingMargin" id="zhp-fg-tAS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="HXo-jV-vpp" id="T3L-Wf-sGF"/>
+                        <outlet property="titleLabel" destination="nMZ-Rw-djF" id="Ody-S8-z3r"/>
+                        <outlet property="webView" destination="8KE-Q2-QND" id="S2q-HU-tn5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXa-0m-yzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="315"/>
         </scene>
     </scenes>
 </document>
