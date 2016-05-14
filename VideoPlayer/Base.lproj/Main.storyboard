@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-8J-Dbn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
+                                <color key="backgroundColor" red="0.85987580128205132" green="0.4875977753652021" blue="0.009938244963289114" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="j8C-7X-2Xs"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a0z-pZ-FDv">
+                                <rect key="frame" x="20" y="28" width="560" height="572"/>
+                                <color key="backgroundColor" red="0.81568627449999997" green="0.4039215686" blue="0.039215686270000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.81568627449999997" green="0.4039215686" blue="0.039215686270000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="Zmf-Pi-OXH" customClass="VideoCell">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zmf-Pi-OXH" id="0Pz-KK-RPl">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="124"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jp7-sZ-evR">
+                                                    <rect key="frame" x="8" y="8" width="544" height="108"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4cq-5G-qZp">
+                                                            <rect key="frame" x="8" y="18" width="126" height="72"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="126" id="iwe-4P-09K"/>
+                                                                <constraint firstAttribute="height" constant="72" id="ugY-pZ-Tnu"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oW8-Bd-6oz">
+                                                            <rect key="frame" x="142" y="8" width="394" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="M6E-4g-dMW"/>
+                                                            </constraints>
+                                                            <string key="text">Stanford University Developing iOS 7 Apps: Lecture 1 Class Logistics, Overview of iOS: Stanford University Developing iOS 7 Apps: Lecture 1 Class Logistics, Overview of iOS</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfF-ms-37a">
+                                                            <rect key="frame" x="142" y="60" width="394" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="IXb-nU-9gs"/>
+                                                            </constraints>
+                                                            <string key="text">Stanford University Developing iOS 7 Apps: Lecture 1 Class Logistics, Overview of iOS: Stanford University Developing iOS 7 Apps: Lecture 1 Class Logistics, Overview of iOS</string>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="oW8-Bd-6oz" firstAttribute="top" secondItem="jp7-sZ-evR" secondAttribute="top" constant="8" id="6KO-cU-Mq9"/>
+                                                        <constraint firstItem="4cq-5G-qZp" firstAttribute="leading" secondItem="jp7-sZ-evR" secondAttribute="leading" constant="8" id="EMp-je-y7a"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qfF-ms-37a" secondAttribute="bottom" constant="8" id="FZV-V3-YpD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="oW8-Bd-6oz" secondAttribute="trailing" constant="8" id="S8i-zQ-ESR"/>
+                                                        <constraint firstItem="4cq-5G-qZp" firstAttribute="top" secondItem="jp7-sZ-evR" secondAttribute="top" constant="18" id="cQh-1P-89E"/>
+                                                        <constraint firstItem="oW8-Bd-6oz" firstAttribute="leading" secondItem="4cq-5G-qZp" secondAttribute="trailing" constant="8" id="gVD-Xc-iqL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qfF-ms-37a" secondAttribute="trailing" constant="8" id="tMY-Cx-3Qo"/>
+                                                        <constraint firstAttribute="bottom" secondItem="4cq-5G-qZp" secondAttribute="bottom" constant="18" id="vkb-s2-PT0"/>
+                                                        <constraint firstItem="qfF-ms-37a" firstAttribute="leading" secondItem="4cq-5G-qZp" secondAttribute="trailing" constant="8" id="yvj-u7-dYD"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.81568627449999997" green="0.4039215686" blue="0.039215686270000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="jp7-sZ-evR" firstAttribute="leading" secondItem="0Pz-KK-RPl" secondAttribute="leadingMargin" id="8QO-wX-P1w"/>
+                                                <constraint firstItem="jp7-sZ-evR" firstAttribute="bottom" secondItem="0Pz-KK-RPl" secondAttribute="bottomMargin" id="bRy-uh-xFo"/>
+                                                <constraint firstItem="jp7-sZ-evR" firstAttribute="top" secondItem="0Pz-KK-RPl" secondAttribute="topMargin" id="kQn-Yw-nPI"/>
+                                                <constraint firstItem="jp7-sZ-evR" firstAttribute="trailing" secondItem="0Pz-KK-RPl" secondAttribute="trailingMargin" id="vcD-9r-Hve"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.81568627449999997" green="0.4039215686" blue="0.039215686270000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="qfF-ms-37a" id="nkM-G9-W0p"/>
+                                            <outlet property="thumbnailImageView" destination="4cq-5G-qZp" id="dz8-rc-gZS"/>
+                                            <outlet property="titleLabel" destination="oW8-Bd-6oz" id="Gfs-As-aGP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="w8G-8J-Dbn" secondAttribute="trailing" id="SkI-tL-Wvl"/>
+                            <constraint firstItem="w8G-8J-Dbn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V6T-w3-XfU"/>
+                            <constraint firstItem="a0z-pZ-FDv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aGt-NP-ugB"/>
+                            <constraint firstItem="a0z-pZ-FDv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="asd-96-r7W"/>
+                            <constraint firstItem="w8G-8J-Dbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="l1L-b3-4Nx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a0z-pZ-FDv" secondAttribute="bottom" id="rjb-Ei-22w"/>
+                            <constraint firstItem="a0z-pZ-FDv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vwd-GW-T02"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="315"/>
+        </scene>
+    </scenes>
+</document>
